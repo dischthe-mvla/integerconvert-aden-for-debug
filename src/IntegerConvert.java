@@ -16,7 +16,7 @@ public class IntegerConvert {
 	private static final int NIB_WIDTH = 4;	
 	
 	/** The debug. */
-	private static int DEBUG = 0;
+	private static boolean DEBUG = false;
 	
 	/**
 	 * Instantiates a new integer converter. This constructor is not used.
@@ -136,6 +136,7 @@ public class IntegerConvert {
 			char aChar = chars[i];
 			if ((aChar>='0') && (aChar<='1')) {
 				value += (aChar-'0')* (int) Math.pow(2,pow);
+				if (DEBUG) System.out.print("\ni="+i+"   aChar="+aChar+"   pow="+pow+"   value="+value);
 				pow++;
 			} else if (aChar != '_') 
 				throw new NumberFormatException("Incorrect Number Format: "+in);
