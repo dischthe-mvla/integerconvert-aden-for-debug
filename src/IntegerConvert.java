@@ -267,7 +267,7 @@ public class IntegerConvert {
 	 * Convert to hex str.
 	 *
 	 * @param in the in
-	 * @param numHex the num hex
+	 * @param numBits the num hex
 	 * @return the string
 	 */
 	private static String convertToHexStr(int in, int numBits) {
